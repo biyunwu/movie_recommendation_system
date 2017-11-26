@@ -1,4 +1,4 @@
-# Movie Reccomendation System
+# Movie Recommendation System
   This is my [capstone project](https://www.coursera.org/learn/java-programming-recommender/home/welcome) of the "[Java Programming and Software Engineering Fundamentals](https://www.coursera.org/specializations/java-programming)" specialization which in offered by Duke University on Coursera.
 
 ### Execution
