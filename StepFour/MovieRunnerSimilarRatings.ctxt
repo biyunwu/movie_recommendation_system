@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MovieRunnerSimilarRatings()
+comment1.params=
+comment1.target=void\ printAverageRatings()
+comment2.params=
+comment2.target=void\ printSimilarRatings()
+comment2.text=public\ void\ printAverageRatingsByYearAfterAndGenre(){\n\ \ \ \ \ \ \ \ //\ MovieDatabase.initialize("ratedmoviesfull.csv");\n\ \ \ \ \ \ \ \ System.out.println("There\ are\ "\ +\ MovieDatabase.size()\ +\ "\ movies\ in\ the\ file.");\n\ \ \ \ \ \ \ \ System.out.println("There\ are\ "\ +\ fourth.getRaterSize()\ +\ "\ raters\ in\ the\ file.");\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ int\ numRating\ \=\ 8;\n\ \ \ \ \ \ \ \ Filter\ filterYear\ \=\ new\ YearAfterFilter(1990);\n\ \ \ \ \ \ \ \ Filter\ filterGenre\ \=\ new\ GenreFilter("Drama");\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ AllFilters\ filters\ \=\ new\ AllFilters();\n\ \ \ \ \ \ \ \ filters.addFilter(filterYear);\n\ \ \ \ \ \ \ \ filters.addFilter(filterGenre);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ ArrayList<Rating>\ ratings\ \=\ fourth.getAverageRatingsByFilter(numRating,\ filters);\n\ \ \ \ \ \ \ \ Collections.sort(ratings);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ int\ num\ \=\ 0;\n\ \ \ \ \ \ \ \ for\ (Rating\ currRating\:\ ratings){\n\ \ \ \ \ \ \ \ \ \ \ \ double\ currValue\ \=\ currRating.getValue();\n\ \ \ \ \ \ \ \ \ \ \ \ if(currValue\ \!\=\ 0.0){\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ num\ +\=\ 1;\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ String\ currMovieID\ \=\ currRating.getItem();\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ System.out.println(currValue\ +\ "\ "\ +\ MovieDatabase.getYear(currMovieID)\ +\ "\ "+MovieDatabase.getTitle(currMovieID));\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ System.out.println("\ \ \ \ "\ +\ MovieDatabase.getGenres(currMovieID));\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ System.out.println("There\ are\ "\ +\ num\ +\ "\ movies\ have\ at\ least\ "\ +\ numRating\ +\ "\ ratings\ and\ satisfy\ the\ filters.");\n}
+comment3.params=
+comment3.target=void\ printSimilarRatingsByGenre()
+comment4.params=
+comment4.target=void\ printSimilarRatingsByDirector()
+comment5.params=
+comment5.target=void\ printSimilarRatingsByGenreAndMinutes()
+comment6.params=
+comment6.target=void\ printSimilarRatingsByYearAfterAndMinutes()
+numComments=7
